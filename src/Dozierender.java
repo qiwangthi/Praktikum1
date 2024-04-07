@@ -3,48 +3,40 @@ public class Dozierender {
     private String name;
     private String fakultaet;
     private String bueronummer;
-    private String feedback;
 
-    public Dozierender(String name, String fakultaet, String bueronummer){
+    public Dozierender(String name, String fakultaet, String bueronummer) {
         this.name = name;
         this.fakultaet = fakultaet;
         this.bueronummer = bueronummer;
     }
 
-    public void setName(String name){
-        this.name = name;
-    }
-
-    public String getName(){
+    public String getName() {
         return name;
     }
 
-    public void setFakultaet(String fakultaet){
-        this.fakultaet = fakultaet;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getFakultaet(){
+    public String getFakultaet() {
         return fakultaet;
     }
 
-    public void setBueronummer(String bueronummer){
-        this.bueronummer = bueronummer;
+    public void setFakultaet(String fakultaet) {
+        this.fakultaet = fakultaet;
     }
 
-    public String getBueronummer(){
+    public String getBueronummer() {
         return bueronummer;
     }
 
-    public void setFeedback(String feedback){
-        this.feedback = feedback;
+    public void setBueronummer(String bueronummer) {
+        this.bueronummer = bueronummer;
     }
-
-    public String getFeedback(){
-        return feedback;
+    
+    public void frageBeantworten(String student, String antwort){
+        System.out.println("Antwort von: "+this.name);
+        System.out.println("Antwort an: "+student);
+        System.out.println(antwort);
     }
-
-    public void frageBeantworten(Studierender studierender, String antwort){
-
-    }
-    ;
 }
