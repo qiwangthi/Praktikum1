@@ -13,7 +13,7 @@ public class Studierender {
   }
 //Öffentliche Methode
   public  String frageStellen (Dozierender dozierender,String frage){
-    return frage;
+    return dozierender.frageBeantworten(this.frage);
   }
   public String getName(){
     return this.name;
@@ -25,11 +25,12 @@ public class Studierender {
     return this.studiengang;
   }
 
-  /*
+  
 // Methode , um eine Sprechstundenanfrage an einen Dozierenden zu senden
-   public void sprechstundenAnfrageSenden(Dozierender dozierender,String grund)
-   System.out.println("Sprechstundenanfrage an" + doziernder.getName() + "gesendet: " + grund);
-   */
+   public void sprechstundenAnfrageSenden(Dozierender dozierender,String grund){
+    dozierender.sprechstundenAnfrageErhalten(this.grund);
+   }
+   
 
 
   
