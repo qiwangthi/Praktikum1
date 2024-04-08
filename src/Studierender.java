@@ -11,10 +11,7 @@ public class Studierender {
     this.matrikelnummer = matrikelnummer;
     this.studiengang = studiengang;
   }
-//Öffentliche Methode
-  public  String frageStellen (Dozierender dozierender,String frage){
-    return dozierender.frageBeantworten(this.frage);
-  }
+  // Get-Methode
   public String getName(){
     return this.name;
   }
@@ -25,13 +22,18 @@ public class Studierender {
     return this.studiengang;
   }
 
-  
+  //Öffentliche Methode
+  public void frageStellen(String dozierender,String frage){
+    System.out.println("von:"+ this.name);
+    System.out.println("an:"+ dozierender);
+    System.out.println("Frage:"+ frage);
+  }
 // Methode , um eine Sprechstundenanfrage an einen Dozierenden zu senden
-   public void sprechstundenAnfrageSenden(Dozierender dozierender,String grund){
-    dozierender.sprechstundenAnfrageErhalten(this.grund);
-   }
+   //public void sprechstundenAnfrageSenden(Dozierender dozierender,String grund){
+    //dozierender.sprechstundenAnfrageErhalten(grund);
+   //}
    
 
-
   
+   
 }
