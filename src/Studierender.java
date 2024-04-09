@@ -28,11 +28,13 @@ public class Studierender {
     System.out.println("an:"+ dozierender);
     System.out.println("Frage:"+ frage);
   }
-// Methode , um eine Sprechstundenanfrage an einen Dozierenden zu senden
-   //public void sprechstundenAnfrageSenden(Dozierender dozierender,String grund){
-    //dozierender.sprechstundenAnfrageErhalten(grund);
-   //}
-   
+  
+  //methode um sprechstundenanfrage zu senden
+   public void sprechstundenAnfrageSenden(Dozierender dozierender,studierender,String datumUhrzeit,String grund){
+    System.out.println("Sprechstundenanfrage von "+studierender.getName());
+    System.out.println("Datum und Uhrzeit: "+ datumUhrzeit);
+    System.out.println("Grund der Anfrage: "+ grund);
+   }
 
   
    
