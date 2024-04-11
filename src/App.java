@@ -11,13 +11,11 @@ public class App {
     
     //frage stellen
     student1.frageStellen(dozent1.getName(),"wann haben wir praktikum? ");
-    dozent1.frageBeantworten(student1,"Praktikum findet am Freitag statt.");
+    dozent1.frageBeantworten(student1.getName(),"Praktikum findet am Freitag statt.");
 
     //Sprechstundenanfrage
     student2.sprechstundenAnfrageSenden(dozent2.getName(),"Gruppeteilung in SoSe2024");
-    
-    //feedbackverwaltung
-    
-    dozent2.feedbackVerwalten("Ben","1","sehr gute Beteiligung im Seminar");
-    }  
-} 
+    //dozent2.sprechstundenanfrageerhalten()
+    //dozent2.feedbackVerwalten(student2.getName(),"sehr gut");
+    }
+}

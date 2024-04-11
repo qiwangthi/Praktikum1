@@ -29,9 +29,10 @@ public class Studierender {
     System.out.println("Frage:"+ frage);
   }
   
-  //methode um sprechstundenanfrage zu senden
-   public void sprechstundenAnfrageSenden(Dozierender dozierender,String grund){
-   // System.out.println("Sprechstundenanfrage von "+this.name);
+  //*methode um sprechstundenanfrage zu senden
+   public void sprechstundenAnfrageSenden(String dozierender,String grund){
+    System.out.println("Sprechstundenanfrage von "+this.name);
+    System.out.println("an:"+ dozierender);
     System.out.println("Grund der Anfrage: "+ grund);
    }
 
