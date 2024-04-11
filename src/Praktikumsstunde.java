@@ -1,4 +1,4 @@
-public class Praktikumsstunde {
+public class Praktikumsstunde extends Lehrveranstaltung {
 
     private String thema;
     private String datum;

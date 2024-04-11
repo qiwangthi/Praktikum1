@@ -1,4 +1,4 @@
-public class Vorlesungsstunde {
+public class Vorlesungsstunde extends Lehrveranstaltung {
 
     private String thema;
     private String datum;
