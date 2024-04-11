@@ -41,16 +41,16 @@ public class Lehrveranstaltung {
     public void removeStudierenden(Studierender studierender){   
     }
     //Hinzufügen von Vorlesungs- und Praktikumsstunden
-    public void addVorlesungsstunde(Vorlesungsstunde vorlesungsstunde){   
+    public void addVorlesungsstunde(int vorlesungsstunde){   
     }
-    public void addPraktikumsstunden(Praktikumsstunden praktikumsstunden){   
+    public void addPraktikumsstunden(int praktikumsstunden){   
     }
     //Anzeigen der Veranstaltungsdetails
     public void anzeigenVeranstaltungsdetails() {
         System.out.println("Titel: "+ this.titel);
         System.out.println("Dozierender: " + dozierender.getName());
         System.out.println("Studierender: "+ studierender.getName();
-        System.out.println("Vorlesungstunde: " +vorlesungsstunde.getName())
+        System.out.println("Vorlesungstunde: " + vorlesungsstunde.getName())
         System.out.println("Praktikumsstunden: "+ praktikumsstunde.getName());
         
         }
