@@ -16,7 +16,22 @@ public class Lehrveranstaltung {
         this.vorlesungsstunde = vorlesungsstunde;
         this.praktikumsstunde = praktikumsstunden;
 
-
+    //get-Methode
+    public String getTitel(){
+        return this.titel;
+    }
+    public Dozierender getDozierender(){
+        return this.dozierender;
+    } 
+    public Studierender getStudierender(){
+        return this.studierender;
+    }
+    public int getVorlesungsstunde(){
+        return this.vorlesungsstunde;
+    }
+    public int getPraktikumsstunde(){
+        return this.praktikumsstunde;
+    }
 
     }
 
@@ -32,17 +47,11 @@ public class Lehrveranstaltung {
     }
     //Anzeigen der Veranstaltungsdetails
     public void anzeigenVeranstaltungsdetails() {
-        System.out.println("Titel:"+ this.titel);
-        System.out.println("Dozierender:" dozierender.getName());
-    
-        System.out.println("Studierender:")
-        for (Studierender studierender : StudierenderListe){
-            System.out.println("-"+ studierender.getName());
-        }
-        System.out.println("Vorlesungstunde: " +)
-        
-        
-        System.out.println("Praktikumsstunden:");
+        System.out.println("Titel: "+ this.titel);
+        System.out.println("Dozierender: " + dozierender.getName());
+        System.out.println("Studierender: "+ studierender.getName();
+        System.out.println("Vorlesungstunde: " +vorlesungsstunde.getName())
+        System.out.println("Praktikumsstunden: "+ praktikumsstunde.getName());
         
         }
 }
