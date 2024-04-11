@@ -6,14 +6,16 @@ public class Praktikumsstunde extends Lehrveranstaltung {
     private String uhrzeit;
     private String raum;
     private String aufgaben;
-main
+
     //konstruktor
     public Praktikumsstunde(String thema, String datum, String uhrzeit, String raum, String aufgaben){
-        this.thema = thema;
+    
+        this.thema = thema; 
         this.datum = datum;
         this.uhrzeit = uhrzeit;
         this.raum = raum;
         this.aufgaben = aufgaben;
+
     }
 
     public String getThema() {

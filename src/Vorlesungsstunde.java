@@ -5,7 +5,10 @@ public class Vorlesungsstunde extends Lehrveranstaltung {
     private String uhrzeit;
     private String raum;
     
-    public Vorlesungsstunde(String thema, String datum, String uhrzeit, String raum) {
+    public Vorlesungsstunde(String thema, String datum, String uhrzeit, String raum){
+     
+       
+    // Add this line to invoke the superclass constructor
         this.thema = thema;
         this.datum = datum;
         this.uhrzeit = uhrzeit;
@@ -53,4 +56,4 @@ public class Vorlesungsstunde extends Lehrveranstaltung {
     }
 
 }    
-}
+

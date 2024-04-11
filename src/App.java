@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class App {
     public static void main(String[] args) throws Exception {
       
@@ -27,12 +29,13 @@ public class App {
     //dozent2.feedbackVerwalten(student2.getName(),"sehr gut");
 
     //erzeugen Lehrveranstaltung
-   /* Lehrveranstaltung lehrveranstaltung = new Lehrveranstaltung(dozent1,student1,vorlesungsstunde,praktikumsstunde);
+    Lehrveranstaltung lehrveranstaltung = new Lehrveranstaltung(dozent1, new ArrayList<>(), new ArrayList<>(), new ArrayList<>());
     lehrveranstaltung.addStudierender(student2);
     lehrveranstaltung.addVorlesungsstunde(vorlesungsstunde);
     lehrveranstaltung.addPraktikumsstunde(praktikumsstunde);
     lehrveranstaltung.anzeigenVeranstaltungsdetails();
-    */
+    }
+    
     
     //erzeugen Sprechstunde
    // Sprechstunde sprechstunde = new Sprechstunde("Java", "2024-05-01", "10:00", "C303");
@@ -41,4 +44,3 @@ public class App {
     
    // dozent1.feedbackVerwalten(student1, "sehr gut" );
     }
-}

@@ -6,10 +6,10 @@ public class Lehrveranstaltung {
     private Dozierender dozierender;
     private List<Studierender> studierender;
     private List<Vorlesungsstunde> vorlesungsstunde;
-    private List<Praktikumsstunde> praktikumsstunde;
+    private  List<Praktikumsstunde> praktikumsstunde;
 
     //Konstruktor
-    public Lehrveranstaltung ( Dozierender dozierender,String studierender,Vorlesungsstunde Vorlesungsstunde,Praktikumsstunde praktikumsstunden ){
+    public Lehrveranstaltung ( Dozierender dozierender, List<Studierender> studierender,List<Vorlesungsstunde> Vorlesungsstunde,List<Praktikumsstunde> praktikumsstunde ){
         //this.titel = titel;
         this.dozierender = dozierender;
         this.studierender= new ArrayList<>();
