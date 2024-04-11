@@ -17,5 +17,12 @@ public class App {
     student2.sprechstundenAnfrageSenden(dozent2.getName(),"Gruppeteilung in SoSe2024");
     //dozent2.sprechstundenanfrageerhalten()
     //dozent2.feedbackVerwalten(student2.getName(),"sehr gut");
+    //Lehr
+
+        List<Studierender> studentList = new ArrayList<>();
+        String[] Studierender = new String[]{"student1", "student2"};
+        add.studentList("student1");
+        add.studentList("student2");
+        System.out.println("Studierende: " + studentList);
     }
 }

@@ -1,3 +1,4 @@
+
 public class Praktikumsstunde extends Lehrveranstaltung {
 
     private String thema;
