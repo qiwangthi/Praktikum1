@@ -18,6 +18,6 @@ public class App {
     
     //feedbackverwaltung
     
-    dozent2.feedbackVerwalten("Ben","1","sehr gute Beteiligung im Seminar")
+    dozent2.feedbackVerwalten("Ben","1","sehr gute Beteiligung im Seminar");
     }  
 } 

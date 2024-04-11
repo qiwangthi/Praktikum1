@@ -3,14 +3,21 @@ import java.security.cert.PKIXRevocationChecker;
 public class Lehrveranstaltung {
     //Datenfield
     private String titel;
-    /*private String Dozierende;
-    private String Studierende;
-    private String Vorlesungsstunden;
-    private String Praktikumsstunden;*/
+    private Dozierender dozierender;
+    private Studierender studierender;
+    private int Vorlesungsstunde;
+    private int Praktikumsstunde;
 
     //Konstruktor
-    public Lehrveranstaltung (String titel){
+    public Lehrveranstaltung (String titel, Dozierender dozierender,Studierender studierender,int Vorlesungsstunde,int Praktikumsstunden ){
         this.titel = titel;
+        this.dozierender = dozierender;
+        this.studierender= studierender;
+        this.vorlesungsstunde = vorlesungsstunde;
+        this.praktikumsstunde = praktikumsstunden;
+
+
+
     }
 
     //Hinzufügen/Entfernen von Studierenden
@@ -32,21 +39,10 @@ public class Lehrveranstaltung {
         for (Studierender studierender : StudierenderListe){
             System.out.println("-"+ studierender.getName());
         }
-        System.out.println("Vorlesungstunde:")
-        for (Vorlesungsstunde vorlesungsstunde: VorlesungsstundeListe){
-            System.out.println("- Thema: " + vorlesungsstunde.getThema());
-            System.out.println("  Datum: " + vorlesungsstunde.getDatum());
-            System.out.println("  Uhrzeit: " + vorlesungsstunde.getUhrzeit());
-            System.out.println("  Raum: " + vorlesungsstunde.getRaum());
-        }
+        System.out.println("Vorlesungstunde: " +)
+        
         
         System.out.println("Praktikumsstunden:");
-        for (Praktikumsstunde praktikumsstunde : praktikumsstundenListe) {
-            System.out.println("- Thema: " + praktikumsstunde.getThema());
-            System.out.println("  Datum: " + praktikumsstunde.getDatum());
-            System.out.println("  Uhrzeit: " + praktikumsstunde.getUhrzeit());
-            System.out.println("  Raum: " + praktikumsstunde.getRaum());
-            System.out.println("  Aufgaben: " + praktikumsstunde.getAufgaben());
-        }
+        
         }
 }
