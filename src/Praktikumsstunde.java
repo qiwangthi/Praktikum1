@@ -6,8 +6,9 @@ public class Praktikumsstunde extends Lehrveranstaltung {
     private String uhrzeit;
     private String raum;
     private String aufgaben;
-    
-    public Praktikumsstunde(String thema, String datum, String uhrzeit, String raum, String aufgaben) {
+main
+    //konstruktor
+    public Praktikumsstunde(String thema, String datum, String uhrzeit, String raum, String aufgaben){
         this.thema = thema;
         this.datum = datum;
         this.uhrzeit = uhrzeit;
@@ -64,6 +65,6 @@ public class Praktikumsstunde extends Lehrveranstaltung {
         System.out.println("Aufgaben: "+this.aufgaben);
     }
 
-} class Praktikumsstunde {
+} 
     
-}
+

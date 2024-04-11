@@ -3,6 +3,7 @@ public class Dozierender {
     private String name;
     private String fakultaet;
     private String bueronummer;
+
     //private int note;
 
     public Dozierender(String name, String fakultaet, String bueronummer) {
@@ -47,14 +48,18 @@ public class Dozierender {
         System.out.println("Antwort von: "+this.name);
         System.out.println("Antwort an: "+student);
         System.out.println(antwort);
+    }
+
+    public void sprechstundenanfrageerhalten(){
+        System.out.println("Sprechstundenanfrage erhalten von: "+this.name);    
+    }
+    /*public void feedbackVerwalten(String studierend, String feedback){
+        System.out.println("Feedback von: "+studierend);
+        System.out.println("Feedback: "+feedback);
     
-    /*public void feedbackVerwalten(String student,String bewertung){
-        System.out.println("feedback von: "+this.name );
-        System.out.println("Name:"+ student);
-        System.out.println(bewertung);
+    
     }
     */
-    }
 }
 
 
